@@ -1,0 +1,14 @@
+services:
+  api:
+    build: ./api
+    ports:
+      - 8010:8000
+
+#  web:
+#    image:
+
+  db:
+    image: mongo
+
+volumes:
+  todo-db:
